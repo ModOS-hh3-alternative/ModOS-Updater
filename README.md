@@ -27,7 +27,7 @@ I am **not** responsible if you brick your calculator or destroy any device. Use
 - Option to use a custom decompressed firmware binary or modify the embedded resource.  
 - Edit fields:
   - Launcher Menu Text (max 18 bytes)
-  - Version String (max 11 bytes)
+  - Version Text (max 11 bytes)
   - Launcher File Name (max 7 bytes)
 - Extract → verify → decompress → modify → recompress → replace resource → call OSUpdate.  
 - Operation log written to `output.txt`.  
