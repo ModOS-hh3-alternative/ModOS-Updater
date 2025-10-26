@@ -1,6 +1,6 @@
 # Hollyhock Customization Tool
 
-Hollyhock Customization Tool is a Windows Forms utility for modifying the HOLLYHOCK firmware and launcher resources for the **fx-CP400**.  
+Hollyhock Customization Tool is a Windows Forms utility for modifying the Hollyhock firmware and launcher resources for the **fx-CP400**.  
 It extracts RCDATA_3070 from the OS update DLL, lets you patch launcher menu text, version string and launcher filename (or supply a custom decompressed binary), recompresses the firmware and replaces the resource so the OSUpdate routine can flash it.
 
 **This project is distributed as source — you must compile it yourself.**  
