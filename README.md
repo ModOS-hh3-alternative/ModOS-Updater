@@ -12,7 +12,7 @@ I am **not** responsible if you brick your calculator or destroy any device. Use
 
 - Target device: **fx-CP400** (this tool is written specifically for that model).  
 - You **must compile** the project from source to produce `HollyhockCustomizer.exe`.  
-- Not responsible for bricked calculators, lost data, or legal issues. No bullshit.  
+- Not responsible for bricked calculators, lost data, or legal issues.
 - The tool expects several files next to the compiled `.exe`:  
   - `OSupdateDLL_original.dll`  
   - `fxASPI.dll`  
