@@ -8,7 +8,7 @@ I am **not** responsible if you brick your calculator or destroy any device. Use
 
 ---
 
-## Quick facts / TL;DR
+## Quick facts
 
 - Target device: **fx-CP400** (this tool is written specifically for that model).  
 - You **must compile** the project from source to produce `HollyhockCustomizer.exe`.  
