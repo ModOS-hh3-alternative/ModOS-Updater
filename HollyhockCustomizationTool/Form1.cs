@@ -193,6 +193,9 @@ namespace HollyhockCustomizationTool
                                 //please no error...
                                 //im to lazy to add exception handling
                                 Resources.ModifyFirmware(menuTextBytes.ToArray(), 9276872);
+                                Resources.ModifyFirmware(menuTextBytes.ToArray(), 9410504);
+                                Resources.ModifyFirmware(menuTextBytes.ToArray(), 9340364);
+                                Resources.ModifyFirmware(menuTextBytes.ToArray(), 9478896);
                                 Resources.ModifyFirmware(versionTextBytes.ToArray(), 9567952);
                                 Resources.ModifyFirmware(launcherFileNameBytes.ToArray(), 1216802);
 
