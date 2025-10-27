@@ -1,7 +1,7 @@
 # Hollyhock Customization Tool
 
 Hollyhock Customization Tool is a Windows Forms utility for modifying the Hollyhock firmware.
-It extracts RCDATA_3070 from the OS update DLL, lets you patch launcher menu text, version string and launcher filename (or supply a custom decompressed binary), recompresses the firmware and replaces the resource so the OSUpdate routine can flash it.
+It extracts RCDATA_3070 from the OS update DLL, lets you patch launcher menu text, version text and launcher filename (or supply a custom decompressed binary), recompresses the firmware and replaces the resource so the OSUpdate routine can flash it.
 
 **This project is distributed as source — you must compile it yourself.**  
 I am **not** responsible if you brick your calculator. Use at your own risk, on legally owned hardware only.
