@@ -48,9 +48,10 @@ I am **not** responsible if you brick your calculator. Use at your own risk, on 
 
 1. Place the compiled `HollyhockCustomizationTool.exe` and the required files (listed above) into the same folder.  
 2. Run `HollyhockCustomizationTool.exe`. The program will verify checksums and exit if any file fails verification.  
-4. Toggle **Use own firmware binary** to:
-   - Supply your own decompressed `decompressed.bin` via Browse.
-     
+3. **If you encounter issues**:  
+   - It’s also possible that your antivirus or anti-cheat software could block the `LoadLibrary` and other functions, preventing the program from working correctly. You might need to temporarily disable them or whitelist the tool. 
+4. Toggle **Use own firmware binary** to:  
+   - Supply your own decompressed `decompressed.bin` via Browse.  
 5. Click **Flash ROM** to run the full routine. Monitor the on-screen output (and `output.txt`) for progress and errors.
 
 Constraints are enforced (text byte limits). If you exceed limits the tool will refuse to proceed.
