@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
@@ -125,18 +125,21 @@ namespace HollyhockCustomizationTool
             if (menuTextBytes.Count > 18)
             {
                 outputBox.Text += "Hollyhock Launcher Menu Text is bigger than 18 bytes!\n";
+                File.WriteAllText("output.txt", outputBox.Text);
                 return;
             }
 
             if (versionTextBytes.Count > 11)
             {
                 outputBox.Text += "Version Text is bigger than 11 bytes!\n";
+                File.WriteAllText("output.txt", outputBox.Text);
                 return;
             }
 
             if (launcherFileNameBytes.Count > 7)
             {
                 outputBox.Text += "Launcher File Name is bigger than 7 bytes!\n";
+                File.WriteAllText("output.txt", outputBox.Text);
                 return;
             }
 
@@ -162,6 +165,7 @@ namespace HollyhockCustomizationTool
                     if (!Checksum.Verify("RCDATA_3070.bin", "e2436d14f75f39dfa97776b0a6aec3cb"))
                     {
                         outputBox.Text += "Verification failed! Please try again.\n";
+                        File.WriteAllText("output.txt", outputBox.Text);
                     }
 
                     else
@@ -178,6 +182,7 @@ namespace HollyhockCustomizationTool
                             if (!Checksum.Verify("decompressed.bin", "0187b77f646766617fd80c9173286239"))
                             {
                                 outputBox.Text += "Verification failed! Please try again.\n";
+                                File.WriteAllText("output.txt", outputBox.Text);
                             }
 
                             else
@@ -207,24 +212,27 @@ namespace HollyhockCustomizationTool
                                         outputBox.Text += "Calling the OSUpdate function...\n";
 
                                         File.WriteAllText("output.txt", outputBox.Text);
-
+                                        Process.Start("https://classpaddev.github.io/first-run");
                                         string InitModifiedOSUpdate = OSUpdater.InitModifiedOSUpdate();
 
                                         if (InitModifiedOSUpdate != null)
                                         {
                                             outputBox.Text += $"Calling the OSUpdate function failed!\n{InitModifiedOSUpdate}";
+                                            File.AppendAllText("output.txt", outputBox.Text);
                                         }
                                     }
 
                                     else
                                     {
                                         outputBox.Text += $"Replacing resources failed!\n{ReplaceRcData}";
+                                        File.WriteAllText("output.txt", outputBox.Text);
                                     }
                                 }
 
                                 else
                                 {
                                     outputBox.Text += $"Recompressing firmware failed!\n{RecompressFirmware}";
+                                    File.WriteAllText("output.txt", outputBox.Text);
                                 }
                             }
                         }
@@ -232,6 +240,7 @@ namespace HollyhockCustomizationTool
                         else
                         {
                             outputBox.Text += $"Decompressing RCDATA_3070 failed!\n{DecompressFirmware}";
+                            File.WriteAllText("output.txt", outputBox.Text);
                         }
                     }
                 }
@@ -239,6 +248,7 @@ namespace HollyhockCustomizationTool
                 else
                 {
                     outputBox.Text += $"Extracting RCDATA_3070 failed!\n{DumpRcData}";
+                    File.WriteAllText("output.txt", outputBox.Text);
                 }
             }
 
@@ -246,10 +256,12 @@ namespace HollyhockCustomizationTool
             {
                 outputBox.Text += "Calling the OSUpdate function...\n";
                 File.WriteAllText("output.txt", outputBox.Text);
+                Process.Start("https://classpaddev.github.io/first-run");
                 string InitOSUpdate = OSUpdater.InitOSUpdate();
                 if (InitOSUpdate != null)
                 {
                     outputBox.Text += $"Calling the OSUpdate function failed!\n{InitOSUpdate}";
+                    File.AppendAllText("output.txt", outputBox.Text);
                 }
             }
 
@@ -258,6 +270,7 @@ namespace HollyhockCustomizationTool
                 if (!File.Exists(customRomTextBox.Text))
                 {
                     outputBox.Text += "File not found!";
+                    File.WriteAllText("output.txt", outputBox.Text);
                     return;
                 }
 
@@ -274,23 +287,27 @@ namespace HollyhockCustomizationTool
                         outputBox.Text += "Successfully replaced RCDATA_3070!\n";
                         outputBox.Text += "Calling the OSUpdate function...\n";
                         File.WriteAllText("output.txt", outputBox.Text);
+                        Process.Start("https://classpaddev.github.io/first-run");
                         string InitModifiedOSUpdate = OSUpdater.InitModifiedOSUpdate();
 
                         if (InitModifiedOSUpdate != null)
                         {
                             outputBox.Text += $"Calling the OSUpdate function failed!\n{InitModifiedOSUpdate}";
+                            File.AppendAllText("output.txt", outputBox.Text);
                         }
                     }
 
                     else
                     {
                         outputBox.Text += $"Replacing resources failed!\n{ReplaceRcData}";
+                        File.WriteAllText("output.txt", outputBox.Text);
                     }
                 }
 
                 else
                 {
                     outputBox.Text += $"Recompressing firmware failed!\n{RecompressFirmware}";
+                    File.WriteAllText("output.txt", outputBox.Text);
                 }
             }
         }
