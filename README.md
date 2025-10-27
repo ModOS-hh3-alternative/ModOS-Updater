@@ -67,7 +67,7 @@ Constraints are enforced (text byte limits). If you exceed limits the tool will 
 ## Legal / Liability / Safety (read this)
 
 - You are fully responsible for the consequences of using this tool. I will not help recover damaged hardware caused by misuse.  
-- Use only on your own fx-CP400 or fx-CG500 or with explicit permission. Do not use this to tamper with devices you don't own.  
+- Use only on your own fx-CP400 or fx-CG500 with explicit permission. Do not use this to tamper with devices you don't own.  
 - This tool modifies firmware resources and invokes OS update routines.
 
 ---
