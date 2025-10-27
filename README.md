@@ -41,8 +41,8 @@ Assumption: project is a `.NET Framework` Windows Forms project (uses `System.Wi
 
 1. Open the solution in **Visual Studio** (2019/2022) or another Windows .NET-capable IDE.  
 2. Target **.NET Framework 4.x** (match whatever the project file expects).  
-3. Set configuration to `Release` and platform to `x86` (most firmware/DLL interop expects 32-bit; switch only if you know binary requires x64).  
-4. Build → `Build Solution`. The produced `HollyhockCustomizerTool.exe` will be in `bin\Release\`.  
+3. Set configuration to `Debug` and platform to `x86`.  
+4. Build → `Build Solution`. The produced `HollyhockCustomizerTool.exe` will be in `bin\Debug\`.  
 5. Copy the required DLLs and `messages.txt` next to the `.exe` before running.
 
 If you prefer command line:
@@ -78,9 +78,9 @@ Constraints are enforced (text byte limits). If you exceed limits the tool will 
 
 ---
 
-## Support / Links
+## Links
 
-- GitHub: https://www.github.com/PyCSharp/  
+- ClasspadDev: https://classpaddev.github.io
 - Discord: https://discord.gg/knpcNJTzpd
 
 ---
