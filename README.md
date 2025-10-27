@@ -39,19 +39,19 @@ I am **not** responsible if you brick your calculator. Use at your own risk, on 
 
 1. Open the solution in **Visual Studio** (2019/2022). 
 2. Set configuration to `Debug` and platform to `x86`.  
-3. Build → `Build Solution`. The produced `HollyhockCustomizerTool.exe` will be in `bin\Debug\`.  
+3. Build → `Build Solution`. The produced `HollyhockCustomizationTool.exe` will be in `bin\Debug\`.  
 4. Copy the required DLLs and `messages.txt` next to the `.exe` before running.
 
 ---
 
 ## Usage
 
-1. Place the compiled `HollyhockCustomizer.exe` and the required files (listed above) into the same folder.  
-2. Run `HollyhockCustomizer.exe`. The program will verify checksums and exit if any file fails verification.  
-3. Toggle **Use own firmware binary** to:
+1. Place the compiled `HollyhockCustomization.exe` and the required files (listed above) into the same folder.  
+2. Run `HollyhockCustomizationTool.exe`. The program will verify checksums and exit if any file fails verification.  
+4. Toggle **Use own firmware binary** to:
    - Supply your own decompressed `decompressed.bin` via Browse.
      
-4. Click **Flash ROM** to run the full routine. Monitor the on-screen output (and `output.txt`) for progress and errors.
+5. Click **Flash ROM** to run the full routine. Monitor the on-screen output (and `output.txt`) for progress and errors.
 
 Constraints are enforced (text byte limits). If you exceed limits the tool will refuse to proceed.
 
