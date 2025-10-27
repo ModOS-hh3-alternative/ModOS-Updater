@@ -79,14 +79,6 @@ Constraints are enforced (text byte limits). If you exceed limits the tool will 
 
 ---
 
-## Notes for maintainers / hackers
-
-- Checksums are hard-coded — update them if you replace the required DLLs/resources.  
-- The code assumes little-endian offsets and fixed byte offsets (see `Resources.ModifyFirmware` calls). If devices differ, you'll need to trace offsets and adapt.  
-- If you want safer operation: add full exception handling, make backups of original DLLs/resources before replacing, and implement dry-run + checksum snapshotting.
-
----
-
 ## Short disclaimer (again)
 
 **Must compile yourself.** **Not responsible if the calculator is bricked.** This is for the **fx-CP400** and **fx-CG500** only. Use with knowledge and care.
