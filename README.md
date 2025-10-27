@@ -11,7 +11,7 @@ I am **not** responsible if you brick your calculator. Use at your own risk, on 
 ## Quick facts
 
 - Target device: **fx-CP400** and **fx-CG500**.
-- You **must compile** the project from source to produce `HollyhockCustomizerTool.exe`.  
+- You **must compile** the project from source to produce `HollyhockCustomizationTool.exe`.  
 - Not responsible for bricked calculators, lost data, or legal issues.
 - The tool expects several files(in bin/Debug) next to the compiled `.exe`:  
   - `OSupdateDLL_original.dll`  
@@ -46,7 +46,7 @@ I am **not** responsible if you brick your calculator. Use at your own risk, on 
 
 ## Usage
 
-1. Place the compiled `HollyhockCustomization.exe` and the required files (listed above) into the same folder.  
+1. Place the compiled `HollyhockCustomizationTool.exe` and the required files (listed above) into the same folder.  
 2. Run `HollyhockCustomizationTool.exe`. The program will verify checksums and exit if any file fails verification.  
 4. Toggle **Use own firmware binary** to:
    - Supply your own decompressed `decompressed.bin` via Browse.
