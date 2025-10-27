@@ -31,8 +31,9 @@ class Checksum
         
         catch
         {
-            //nothing, lol
+            return false;
         }
         return false;
     }
+
 }
