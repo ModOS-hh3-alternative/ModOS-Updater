@@ -11,7 +11,7 @@ I am **not** responsible if you brick your calculator or destroy any device. Use
 ## Quick facts
 
 - Target device: **fx-CP400** (this tool is written specifically for that model).  
-- You **must compile** the project from source to produce `HollyhockCustomizer.exe`.  
+- You **must compile** the project from source to produce `HollyhockCustomizerTool.exe`.  
 - Not responsible for bricked calculators, lost data, or legal issues.
 - The tool expects several files next to the compiled `.exe`:  
   - `OSupdateDLL_original.dll`  
@@ -42,7 +42,7 @@ Assumption: project is a `.NET Framework` Windows Forms project (uses `System.Wi
 1. Open the solution in **Visual Studio** (2019/2022) or another Windows .NET-capable IDE.  
 2. Target **.NET Framework 4.x** (match whatever the project file expects).  
 3. Set configuration to `Release` and platform to `x86` (most firmware/DLL interop expects 32-bit; switch only if you know binary requires x64).  
-4. Build → `Build Solution`. The produced `HollyhockCustomizer.exe` will be in `bin\Release\`.  
+4. Build → `Build Solution`. The produced `HollyhockCustomizerTool.exe` will be in `bin\Release\`.  
 5. Copy the required DLLs and `messages.txt` next to the `.exe` before running.
 
 If you prefer command line:
