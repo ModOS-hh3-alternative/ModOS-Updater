@@ -10,7 +10,7 @@ I am **not** responsible if you brick your calculator. Use at your own risk, on 
 
 ## Quick facts
 
-- Target device: **fx-CP400** (this tool is written specifically for that model).  
+- Target device: **fx-CP400** and **fx-CG500**.
 - You **must compile** the project from source to produce `HollyhockCustomizerTool.exe`.  
 - Not responsible for bricked calculators, lost data, or legal issues.
 - The tool expects several files next to the compiled `.exe`:  
