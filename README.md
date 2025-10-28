@@ -40,10 +40,9 @@ I am **not** responsible if you brick your calculator. Use at your own risk, on 
 1. Open the solution in **Visual Studio**.
 2. Right-click on **Form1.resx** → **Properties** → enable **“Unblock”** in the bottom right  
    *This prevents resource loading errors during compile.*
-3. Set configuration to **Debug** and platform to **x86**.
-4. Go to **Build → Build Solution**.  
+3. Go to **Build → Build Solution**.  
    The executable **HollyhockCustomizationTool.exe** will appear in `bin/Debug/`.
-5. Copy all required **DLLs** and **messages.txt** into the same folder as the `.exe` before running.
+4. Copy all required **DLLs** and **messages.txt** into the same folder as the `.exe` before running.
 
 ---
 
